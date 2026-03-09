@@ -4,6 +4,17 @@ Disables the Hands-Free Profile (HFP) on a Bluetooth audio device so Windows sto
 
 Useful if you use a dedicated microphone and want to prevent Windows from switching your headphones to the lower-quality headset mode when an app (game, Discord, etc.) requests a microphone.
 
+## Common Symptoms
+
+This script fixes issues such as:
+
+- Bluetooth headphones sound muffled or low quality when a game or app starts
+- Audio cuts out or drops when joining voice chat (Discord, Steam, Xbox app, etc.)
+- Headphones switch to "Headset" mode and microphone stops working correctly
+- Marathon/Valorant game audio stops working when enabling in-game chat
+- "Headset (AirPods Pro Hands-Free)" appears as the default audio device instead of "Headphones (AirPods Pro)"
+- Windows automatically switches audio devices when an app requests a microphone
+
 ## Warning
 
 - **Modifies the Windows registry.** Changes are made to `HKLM\SYSTEM\CurrentControlSet\Services\BTHPORT` which is part of the Bluetooth stack. Incorrect edits to this area can affect all Bluetooth devices. This script only changes the `Enabled` flag for the HFP service on the targeted device.
