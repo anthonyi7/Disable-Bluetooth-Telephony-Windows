@@ -4,6 +4,13 @@ Disables the Hands-Free Profile (HFP) on a Bluetooth audio device so Windows sto
 
 Useful if you use a dedicated microphone and want to prevent Windows from switching your headphones to the lower-quality headset mode when an app (game, Discord, etc.) requests a microphone.
 
+## Warning
+
+- **Modifies the Windows registry.** Changes are made to `HKLM\SYSTEM\CurrentControlSet\Services\BTHPORT` which is part of the Bluetooth stack. Incorrect edits to this area can affect all Bluetooth devices. This script only changes the `Enabled` flag for the HFP service on the targeted device.
+- **Requires Administrator.** The script will refuse to run without elevated privileges.
+- **Registers a startup task.** A scheduled task is created in Task Scheduler that runs at every logon. See the Notes section for how to remove it.
+- **Only affects the targeted device.** Other Bluetooth devices and profiles are not touched.
+
 ## Requirements
 
 - Windows 10/11
