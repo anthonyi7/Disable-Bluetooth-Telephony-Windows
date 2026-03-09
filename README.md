@@ -21,7 +21,9 @@ By default it targets any device matching `"AirPods"`. Use `-DeviceName` to targ
 
 ```powershell
 .\disable_telephony.ps1 -DeviceName "AirPods Pro"
-.\disable_telephony.ps1 -DeviceName "WH-1000XM5"
+.\disable_telephony.ps1 -DeviceName "Steelseries Arctis 7"
+.\disable_telephony.ps1 -DeviceName "HyperX Cloud III"
+.\disable_telephony.ps1 -DeviceName "Astro A50"
 ```
 
 ## How it works
